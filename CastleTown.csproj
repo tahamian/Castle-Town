@@ -80,7 +80,20 @@
     <Compile Include="Assets\Interface\PlaceHolder.cs" />
     <Compile Include="Assets\Materials\PlaceHolder.cs" />
     <Compile Include="Assets\Prefabs\PlaceHolder.cs" />
-    <Compile Include="Assets\Scripts\Template.cs" />
+    <Compile Include="Assets\Scripts\Education\Education.cs" />
+    <Compile Include="Assets\Scripts\Education\EducationHandler.cs" />
+    <Compile Include="Assets\Scripts\Game\GameData.cs" />
+    <Compile Include="Assets\Scripts\Health\Health.cs" />
+    <Compile Include="Assets\Scripts\Health\HealthHandler.cs" />
+    <Compile Include="Assets\Scripts\Infrastructure\Infrastructure.cs" />
+    <Compile Include="Assets\Scripts\Infrastructure\InfrastructureHandler.cs" />
+    <Compile Include="Assets\Scripts\Interface\MenuHandler.cs" />
+    <Compile Include="Assets\Scripts\Military\Military.cs" />
+    <Compile Include="Assets\Scripts\Military\MilitaryHandler.cs" />
+    <Compile Include="Assets\Scripts\Simulation\SimulationHandler.cs" />
+    <Compile Include="Assets\Scripts\Simulation\Town.cs" />
+    <Compile Include="Assets\Scripts\Trade\Trade.cs" />
+    <Compile Include="Assets\Scripts\Trade\TradeHandler.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
