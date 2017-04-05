@@ -7,17 +7,21 @@ public class MilitaryHandler : MonoBehaviour
 {
     private float MilitarySilderGet;
     private Text MilitaryValueGet;
+	public GameObject slide;
+	public GameObject text;
     // Use this for initialization
     void Start()
     {
-        MilitarySilderGet = GameObject.Find("Military Slider").GetComponent<Slider>().value;
-        MilitaryValueGet = GameObject.Find("Military Value").GetComponent<Text>();
+        //MilitarySilderGet = GameObject.Find("Military Slider").GetComponent<Slider>().value;
+        //MilitaryValueGet = GameObject.Find("Military Value").GetComponent<Text>();
+		slide.GetComponent<Slider> ().value = 20;
+		text.GetComponent<Text> ().text = Mathf.Round (MilitarySilderGet).ToString ();
     }
 
     // Update is called once per frame
     void Update()
-    {
-        MilitarySilderGet = GameObject.Find("Military Slider").GetComponent<Slider>().value;
-        MilitaryValueGet.text = Mathf.Round(MilitarySilderGet).ToString();
+    {	
+		MilitarySilderGet = slide.GetComponent<Slider> ().value;
+		text.GetComponent<Text> ().text = Mathf.Round (MilitarySilderGet).ToString ();
     }
 }

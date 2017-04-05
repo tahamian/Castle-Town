@@ -6,15 +6,19 @@ using UnityEngine.UI;
 public class TradeHandler : MonoBehaviour {
 	private float TradeSilderGet;
 	private Text TradeValueGet;
+	public GameObject slide;
+	public GameObject text;
 	// Use this for initialization
 	void Start () {
-		TradeSilderGet = GameObject.Find ("Trade Slider").GetComponent<Slider> ().value;
-		TradeValueGet = GameObject.Find ("Trade Value").GetComponent<Text> ();
+		//TradeSilderGet = slide.GetComponent<Slider> ().value;
+		//TradeValueGet = text.GetComponent<Text> ();
+		slide.GetComponent<Slider> ().value = 20;
+		text.GetComponent<Text> ().text = Mathf.Round (TradeSilderGet).ToString ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		TradeSilderGet = GameObject.Find ("Trade Slider").GetComponent<Slider> ().value;
-		TradeValueGet.text = Mathf.Round (TradeSilderGet).ToString ();
+		TradeSilderGet = slide.GetComponent<Slider> ().value;
+		text.GetComponent<Text> ().text = Mathf.Round (TradeSilderGet).ToString ();
 	}
 }
