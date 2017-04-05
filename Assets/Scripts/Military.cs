@@ -18,7 +18,7 @@ public class Military:MonoBehaviour{
     }
 
     void Update(){
-    	milLife = impact * (milSlider - 0.3f * Education.eduLife + 0.3f * Trade.traLife);
+    	milLife = impact * (milSlider - 0.3f * Education.eduLife + 0.9f * Trade.traLife + 0.9f * Health.heaLife);
 		milSlider = slider.GetComponent<Slider>().value;
 		text.GetComponent<Text>().text = Mathf.Round(milSlider).ToString();
     }

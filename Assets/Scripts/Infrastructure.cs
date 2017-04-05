@@ -18,7 +18,7 @@ public class Infrastructure:MonoBehaviour{
     }
 
     void Update(){
-    	infLife = impact * (infSlider - 0.3f * Military.milLife + 0.3f * Education.eduLife);
+    	infLife = impact * (infSlider - 0.3f * Military.milLife + 0.9f * Education.eduLife + 0.9f * Trade.traLife);
 		infSlider = slider.GetComponent<Slider>().value;
 		text.GetComponent<Text>().text = Mathf.Round(infSlider).ToString();
     }

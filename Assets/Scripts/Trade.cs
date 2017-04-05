@@ -18,7 +18,7 @@ public class Trade:MonoBehaviour{
     }
 
     void Update(){
-    	traLife = impact * (traSlider - 0.3f * Infrastructure.infLife + 0.3f * Education.eduLife);
+    	traLife = impact * (traSlider + 0.3f * Education.eduLife - 0.5f * Military.milLife - 0.5f * Infrastructure.infLife - 0.5f * Health.heaLife);
 		traSlider = slider.GetComponent<Slider>().value;
 		text.GetComponent<Text>().text = Mathf.Round(traSlider).ToString();
     }

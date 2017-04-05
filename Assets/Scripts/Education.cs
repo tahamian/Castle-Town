@@ -18,7 +18,7 @@ public class Education:MonoBehaviour{
     }
 
     void Update(){
-    	eduLife = impact * (eduSlider - 0.3f * Military.milLife + 0.3f * Trade.traLife);
+    	eduLife = impact * (eduSlider - 0.2f * Military.milLife + 1.3f * Trade.traLife);
 		eduSlider = slider.GetComponent<Slider>().value;
 		text.GetComponent<Text>().text = Mathf.Round(eduSlider).ToString();
     }
