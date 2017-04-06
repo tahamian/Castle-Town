@@ -18,7 +18,7 @@ public class Health:MonoBehaviour{
     }
 
     void Update(){
-    	heaLife = impact * (heaSlider - 0.5f * Military.milLife + 0.3f * Infrastructure.infLife + 0.8f * Trade.traLife + 0.9 * Education.eduLife);
+    	heaLife = impact * (heaSlider - 0.5f * Military.milLife + 0.3f * Infrastructure.infLife + 0.8f * Trade.traLife + 0.9f * Education.eduLife);
 		heaSlider = slider.GetComponent<Slider>().value;
 		text.GetComponent<Text>().text = Mathf.Round(heaSlider).ToString();
     }
