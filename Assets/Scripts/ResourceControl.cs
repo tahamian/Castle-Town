@@ -8,6 +8,7 @@ public class ResourceControl:MonoBehaviour{
 	private float currResource;
 	public float resrouceMax;
 	private float resourceLeft;
+    public Text text;
 	public Slider tradeSlider;
 	public Slider militarySlider;
 	public Slider healthSlider;
@@ -27,7 +28,8 @@ public class ResourceControl:MonoBehaviour{
 		currMilitaryVal = 20f;
 		currTradeVal = 20f;
 		resourceLeft = 0;
-	}
+        text.GetComponent<Text>().text = Mathf.Round(resourceLeft).ToString();
+    }
 
 	void Update(){
 		float tradeVal = tradeSlider.value;
@@ -35,10 +37,10 @@ public class ResourceControl:MonoBehaviour{
 		float healthVal = healthSlider.value;
 		float infrastructureVal = infrastructureSlider.value;
 		float educationVal = educationSlider.value;
-
-		currResource = tradeVal + militaryVal + healthVal + infrastructureVal + educationVal;
-
-		if(currResource > resrouceMax){
+        text.GetComponent<Text>().text = Mathf.Round(resourceLeft).ToString();
+        currResource = tradeVal + militaryVal + healthVal + infrastructureVal + educationVal;
+       
+        if (currResource > resrouceMax){
 			currTradeVal = Mathf.Min (currTradeVal, tradeVal);
 			currHealthVal = Mathf.Min (currHealthVal, healthVal);
 			currInfraVal = Mathf.Min (currInfraVal, infrastructureVal);

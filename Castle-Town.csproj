@@ -79,21 +79,15 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Education.cs" />
-    <Compile Include="Assets\Scripts\EventHistroy.cs" />
     <Compile Include="Assets\Scripts\EventTrigger.cs" />
     <Compile Include="Assets\Scripts\Events.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\Infrastructure.cs" />
     <Compile Include="Assets\Scripts\Military.cs" />
+    <Compile Include="Assets\Scripts\ResourceControl.cs" />
     <Compile Include="Assets\Scripts\Trade.cs" />
   </ItemGroup>
   <ItemGroup>
