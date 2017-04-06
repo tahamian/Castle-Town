@@ -40,7 +40,7 @@ public class ResourceControl:MonoBehaviour{
         text.GetComponent<Text>().text = Mathf.Round(resourceLeft).ToString();
         currResource = tradeVal + militaryVal + healthVal + infrastructureVal + educationVal;
        
-        if (currResource > resrouceMax){
+        if(currResource > resrouceMax){
 			currTradeVal = Mathf.Min (currTradeVal, tradeVal);
 			currHealthVal = Mathf.Min (currHealthVal, healthVal);
 			currInfraVal = Mathf.Min (currInfraVal, infrastructureVal);

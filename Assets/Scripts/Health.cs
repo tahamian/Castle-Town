@@ -12,13 +12,16 @@ public class Health:MonoBehaviour{
 	public GameObject text;
 
     void Start(){
-    	impact = 1;
+    	heaLife = 100;
+    	impact = 0;
 		slider.GetComponent<Slider>().value = 20;
 		text.GetComponent<Text>().text = Mathf.Round(heaSlider).ToString();
     }
 
     void Update(){
-    	heaLife = impact * (heaSlider - 0.5f * Military.milLife + 0.3f * Infrastructure.infLife + 0.8f * Trade.traLife + 0.9f * Education.eduLife);
+    	heaLife += impact * (heaSlider - 0.6f * Military.milLife - 0.1f * Infrastructure.infLife + 0.1f * Trade.traLife + 0.1f * Education.eduLife);
+    	impact = 0;
+    	if(heaLife >= 100) heaLife = 100;
 		heaSlider = slider.GetComponent<Slider>().value;
 		text.GetComponent<Text>().text = Mathf.Round(heaSlider).ToString();
     }
