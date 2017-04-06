@@ -15,7 +15,7 @@ public class Events:MonoBehaviour{
 						new string[]{"A war has been waged upon Castletown.", "0.3", "0.7", "0.3", "0.7", "0.7"},
 						new string[]{"Local teachers are striking.", "1", "0.7", "1", "1", "1"},
 						new string[]{"Castletown's military is on strike.", "1", "1", "0.7", "1", "1"},
-						new string[]{"A famine has striked.", "0.5", "0.7", "0.7", "0.7", "0.7"},
+						new string[]{"A famine has struck.", "0.5", "0.7", "0.7", "0.7", "0.7"},
 						new string[]{"Castletown suffers a violent Earthquake.", "0.7", "0.7", "0.7", "0.7", "0.5"},
 						new string[]{"A coup has taken place due to unemployment and high tariffs.", "1", "0.7", "0.7", "0.7", "0.7"}};
 
