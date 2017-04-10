@@ -11,6 +11,6 @@ How the game looks like
 
 Manage your resources!
 
-<img src="Event.png"  style="width: 50%;" "height: 50%"/>
+<img src="Event.png"  style="width: 50px;" "height: 50px"/>
 
 Watch as Events out of your control affect Castle Town
