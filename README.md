@@ -7,7 +7,7 @@ How to Install
 Download the APK included in this Repo and run on your android device!
 How the game looks like
 --------------------------
-![Alt text](Model.png =60x100?raw=true "Model View")
+![Alt text](Model.png? =30x50 "Model View")
 
 Manage your resources!
 
