@@ -14,5 +14,3 @@ Manage your resources!
 <img src="Event.png"  style="width: 150px;" "height: 100px"/>
 
 Watch as Events out of your control affect Castle Town
-
->>>>>>> 3a357d636c606d74c5795ac0ec01d2dc202931d1:README.md
