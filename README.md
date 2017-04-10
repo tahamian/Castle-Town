@@ -11,6 +11,6 @@ How the game looks like
 
 Manage your resources!
 
-![alt tag](https://raw.https://gitlab.cas.mcmaster.ca/chaneh/Castle-Town/branch/path/to/Event.png)
+![alt tag](https://gitlab.cas.mcmaster.ca/chaneh/Castle-Town/blob/master/Event.png)
 
 Watch as Events out of your control affect Castle Town
