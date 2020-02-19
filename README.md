@@ -7,10 +7,10 @@ How to Install
 Download the APK included in this Repo and run on your android device!
 How the game looks like
 --------------------------
-<img src="Model.png"  style="width: 150px;" "height: 100px"/>
+![Image did not load](Model.png "Model")
 
 Manage your resources!
 
-<img src="Event.png"  style="width: 150px;" "height: 100px"/>
+![Image did not load](Event.png "Event Log")
 
 Watch as Events out of your control affect Castle Town
